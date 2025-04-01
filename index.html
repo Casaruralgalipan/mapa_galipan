@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f46307cbdb52fe28b1d29ba09e9e8219 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f46307cbdb52fe28b1d29ba09e9e8219" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f46307cbdb52fe28b1d29ba09e9e8219 = L.map(
+                "map_f46307cbdb52fe28b1d29ba09e9e8219",
+                {
+                    center: [40.6062, -4.4457],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bc18889871b0828599f2d96de9b80dbd = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var marker_a9e7a82dae97b3d5dd1447e4d13a0530 = L.marker(
+                [40.6062, -4.4457],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_472d111ed7f3cd52ae360983068ba990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a9e7a82dae97b3d5dd1447e4d13a0530.setIcon(icon_472d111ed7f3cd52ae360983068ba990);
+        
+    
+        var popup_a214789f6c2fcc490d507c7bb3081571 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_059fe069b0851c2b706b61d16f099e4f = $(`<div id="html_059fe069b0851c2b706b61d16f099e4f" style="width: 100.0%; height: 100.0%;">Casa Rural</div>`)[0];
+            popup_a214789f6c2fcc490d507c7bb3081571.setContent(html_059fe069b0851c2b706b61d16f099e4f);
+        
+
+        marker_a9e7a82dae97b3d5dd1447e4d13a0530.bindPopup(popup_a214789f6c2fcc490d507c7bb3081571)
+        ;
+
+        
+    
+    
+            var marker_7a9510428f6c967d62197016310ec87b = L.marker(
+                [40.612, -4.42],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_678d00382193456b89c4051ed0b2fac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7a9510428f6c967d62197016310ec87b.setIcon(icon_678d00382193456b89c4051ed0b2fac9);
+        
+    
+        var popup_76de3dba0f04ccb418dc53b3b9b77b08 = L.popup({"maxWidth": 300});
+
+        
+            var html_1279df6b746b2dd3432aa4fe92484294 = $(`<div id="html_1279df6b746b2dd3432aa4fe92484294" style="width: 100.0%; height: 100.0%;"><b>Ruta de Casasola</b><br>Tipo: Senderismo<br>Longitud: 12.0 km<br>Distancia desde la casa: 2.27 km</div>`)[0];
+            popup_76de3dba0f04ccb418dc53b3b9b77b08.setContent(html_1279df6b746b2dd3432aa4fe92484294);
+        
+
+        marker_7a9510428f6c967d62197016310ec87b.bindPopup(popup_76de3dba0f04ccb418dc53b3b9b77b08)
+        ;
+
+        
+    
+    
+            var marker_cf055a55d8b2c28f6b1481c09635e16c = L.marker(
+                [40.618, -4.432],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_8b9aed56ef5c453695772852f3565739 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf055a55d8b2c28f6b1481c09635e16c.setIcon(icon_8b9aed56ef5c453695772852f3565739);
+        
+    
+        var popup_5ccc3382a88e7e97f7d77d2e3943a0b3 = L.popup({"maxWidth": 300});
+
+        
+            var html_8f7aff6d40755c06830fad5826f688df = $(`<div id="html_8f7aff6d40755c06830fad5826f688df" style="width: 100.0%; height: 100.0%;"><b>Ruta del Espinolo</b><br>Tipo: Senderismo<br>Longitud: 9.5 km<br>Distancia desde la casa: 1.75 km</div>`)[0];
+            popup_5ccc3382a88e7e97f7d77d2e3943a0b3.setContent(html_8f7aff6d40755c06830fad5826f688df);
+        
+
+        marker_cf055a55d8b2c28f6b1481c09635e16c.bindPopup(popup_5ccc3382a88e7e97f7d77d2e3943a0b3)
+        ;
+
+        
+    
+    
+            var marker_6a4499611c5733cadf2bd91edd8c8bd4 = L.marker(
+                [40.61, -4.455],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_eec0cc08dba00ce1d2c0a23878a935b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6a4499611c5733cadf2bd91edd8c8bd4.setIcon(icon_eec0cc08dba00ce1d2c0a23878a935b7);
+        
+    
+        var popup_a2fcb2c8411f869122a8971acfc26887 = L.popup({"maxWidth": 300});
+
+        
+            var html_57de03dbb61bdcf056af88a656f340bf = $(`<div id="html_57de03dbb61bdcf056af88a656f340bf" style="width: 100.0%; height: 100.0%;"><b>Ruta del Embalse de Navalperal</b><br>Tipo: Senderismo<br>Longitud: 6.0 km<br>Distancia desde la casa: 0.89 km</div>`)[0];
+            popup_a2fcb2c8411f869122a8971acfc26887.setContent(html_57de03dbb61bdcf056af88a656f340bf);
+        
+
+        marker_6a4499611c5733cadf2bd91edd8c8bd4.bindPopup(popup_a2fcb2c8411f869122a8971acfc26887)
+        ;
+
+        
+    
+    
+            var marker_d8e9e0cbbea26cf7ee6b44447582c274 = L.marker(
+                [40.635, -4.525],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_147fc0c6fefc998672f138e5e0e9101b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d8e9e0cbbea26cf7ee6b44447582c274.setIcon(icon_147fc0c6fefc998672f138e5e0e9101b);
+        
+    
+        var popup_e9e50de3854288e38ade2d1d2cfbf244 = L.popup({"maxWidth": 300});
+
+        
+            var html_621a9be3eebad3da62eebbb5709935dc = $(`<div id="html_621a9be3eebad3da62eebbb5709935dc" style="width: 100.0%; height: 100.0%;"><b>Ruta del Risco de los Dineros</b><br>Tipo: Senderismo<br>Longitud: 11.2 km<br>Distancia desde la casa: 7.43 km</div>`)[0];
+            popup_e9e50de3854288e38ade2d1d2cfbf244.setContent(html_621a9be3eebad3da62eebbb5709935dc);
+        
+
+        marker_d8e9e0cbbea26cf7ee6b44447582c274.bindPopup(popup_e9e50de3854288e38ade2d1d2cfbf244)
+        ;
+
+        
+    
+    
+            var marker_a98b81f691b13717acdbc34bf8610cfc = L.marker(
+                [40.62, -4.41],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_d4900fecd7d8ef9f817fe39b421276ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a98b81f691b13717acdbc34bf8610cfc.setIcon(icon_d4900fecd7d8ef9f817fe39b421276ab);
+        
+    
+        var popup_41d2687cadca7e25ee067d3567b6fa40 = L.popup({"maxWidth": 300});
+
+        
+            var html_67b08b81d97318007f2b31a982245449 = $(`<div id="html_67b08b81d97318007f2b31a982245449" style="width: 100.0%; height: 100.0%;"><b>Ruta de la Fuente de la Duquesa</b><br>Tipo: Senderismo<br>Longitud: 8.0 km<br>Distancia desde la casa: 3.39 km</div>`)[0];
+            popup_41d2687cadca7e25ee067d3567b6fa40.setContent(html_67b08b81d97318007f2b31a982245449);
+        
+
+        marker_a98b81f691b13717acdbc34bf8610cfc.bindPopup(popup_41d2687cadca7e25ee067d3567b6fa40)
+        ;
+
+        
+    
+    
+            var marker_6ed69e59a0280d3c661846818f93eaa2 = L.marker(
+                [40.6, -4.52],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_248ecfa7b1c3391be9805be8d4a781c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6ed69e59a0280d3c661846818f93eaa2.setIcon(icon_248ecfa7b1c3391be9805be8d4a781c3);
+        
+    
+        var popup_b6fbc3eb425af274c1b6199b25dedf3e = L.popup({"maxWidth": 300});
+
+        
+            var html_95142673aebed72d98459b988d8eb9e4 = $(`<div id="html_95142673aebed72d98459b988d8eb9e4" style="width: 100.0%; height: 100.0%;"><b>Ruta Circular Sierra Malagón</b><br>Tipo: Ciclismo<br>Longitud: 14.0 km<br>Distancia desde la casa: 6.33 km</div>`)[0];
+            popup_b6fbc3eb425af274c1b6199b25dedf3e.setContent(html_95142673aebed72d98459b988d8eb9e4);
+        
+
+        marker_6ed69e59a0280d3c661846818f93eaa2.bindPopup(popup_b6fbc3eb425af274c1b6199b25dedf3e)
+        ;
+
+        
+    
+    
+            var marker_33fb6c67089334b45801ef53797cc16b = L.marker(
+                [40.58, -4.48],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_957ee45175b4ec2acea949746ab98c2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_33fb6c67089334b45801ef53797cc16b.setIcon(icon_957ee45175b4ec2acea949746ab98c2f);
+        
+    
+        var popup_f6caadfce27e782595fe0b017b963b49 = L.popup({"maxWidth": 300});
+
+        
+            var html_7329a5e6ef5accfe238a7c579a975e37 = $(`<div id="html_7329a5e6ef5accfe238a7c579a975e37" style="width: 100.0%; height: 100.0%;"><b>Ruta del Embalse de Valdemaqueda</b><br>Tipo: Ciclismo<br>Longitud: 12.5 km<br>Distancia desde la casa: 4.11 km</div>`)[0];
+            popup_f6caadfce27e782595fe0b017b963b49.setContent(html_7329a5e6ef5accfe238a7c579a975e37);
+        
+
+        marker_33fb6c67089334b45801ef53797cc16b.bindPopup(popup_f6caadfce27e782595fe0b017b963b49)
+        ;
+
+        
+    
+    
+            var marker_ce562fb854ca5aed50064f9d90f9aad5 = L.marker(
+                [40.45, -4.47],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_071235aad8c9722dd289225e61decd48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ce562fb854ca5aed50064f9d90f9aad5.setIcon(icon_071235aad8c9722dd289225e61decd48);
+        
+    
+        var popup_a05c2e55e3d23cc3055c7a8ef2789c38 = L.popup({"maxWidth": 300});
+
+        
+            var html_bb12d80baf39765374b59507e5fee33c = $(`<div id="html_bb12d80baf39765374b59507e5fee33c" style="width: 100.0%; height: 100.0%;"><b>Ruta Pinares de Cebreros</b><br>Tipo: Ciclismo<br>Longitud: 17.3 km<br>Distancia desde la casa: 17.47 km</div>`)[0];
+            popup_a05c2e55e3d23cc3055c7a8ef2789c38.setContent(html_bb12d80baf39765374b59507e5fee33c);
+        
+
+        marker_ce562fb854ca5aed50064f9d90f9aad5.bindPopup(popup_a05c2e55e3d23cc3055c7a8ef2789c38)
+        ;
+
+        
+    
+    
+            var marker_1048d07cfad4429b272ce28da6570ed1 = L.marker(
+                [40.4, -4.65],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_c9075e9d61dbb884ca384b5f54755a17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1048d07cfad4429b272ce28da6570ed1.setIcon(icon_c9075e9d61dbb884ca384b5f54755a17);
+        
+    
+        var popup_72d60a998e6bdd101937b16d4fca454c = L.popup({"maxWidth": 300});
+
+        
+            var html_e5bee8a89dc042724bc191cf5e8b6484 = $(`<div id="html_e5bee8a89dc042724bc191cf5e8b6484" style="width: 100.0%; height: 100.0%;"><b>Ruta Valle de Iruelas</b><br>Tipo: Ciclismo<br>Longitud: 20.0 km<br>Distancia desde la casa: 28.71 km</div>`)[0];
+            popup_72d60a998e6bdd101937b16d4fca454c.setContent(html_e5bee8a89dc042724bc191cf5e8b6484);
+        
+
+        marker_1048d07cfad4429b272ce28da6570ed1.bindPopup(popup_72d60a998e6bdd101937b16d4fca454c)
+        ;
+
+        
+    
+    
+            var marker_d560b9e5973ca18611c3b26cb51be7f6 = L.marker(
+                [40.55, -4.55],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_d1415dbf3607b95250b3f26f092c63ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d560b9e5973ca18611c3b26cb51be7f6.setIcon(icon_d1415dbf3607b95250b3f26f092c63ff);
+        
+    
+        var popup_285ff9f6079b6ba231750c618dfeff46 = L.popup({"maxWidth": 300});
+
+        
+            var html_8f81cf6677658a090ce0319ff3fafc30 = $(`<div id="html_8f81cf6677658a090ce0319ff3fafc30" style="width: 100.0%; height: 100.0%;"><b>Ruta Cañada Real Leonesa</b><br>Tipo: Ciclismo<br>Longitud: 18.4 km<br>Distancia desde la casa: 10.81 km</div>`)[0];
+            popup_285ff9f6079b6ba231750c618dfeff46.setContent(html_8f81cf6677658a090ce0319ff3fafc30);
+        
+
+        marker_d560b9e5973ca18611c3b26cb51be7f6.bindPopup(popup_285ff9f6079b6ba231750c618dfeff46)
+        ;
+
+        
+    
+    
+            var marker_8e01b46f76b27bd4e0185646db4b5a29 = L.marker(
+                [40.595, -4.333],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_33bcda71b75b7cdf7f0a8cc9d9836e74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_8e01b46f76b27bd4e0185646db4b5a29.setIcon(icon_33bcda71b75b7cdf7f0a8cc9d9836e74);
+        
+    
+        var popup_f27d22394b10ac0a243b225493c5fbad = L.popup({"maxWidth": 300});
+
+        
+            var html_0aca0b17f2ab849d232969b688972402 = $(`<div id="html_0aca0b17f2ab849d232969b688972402" style="width: 100.0%; height: 100.0%;"><b>Las Navas del Marqués</b><br>Tipo: Pueblo<br>Distancia desde la casa: 9.62 km</div>`)[0];
+            popup_f27d22394b10ac0a243b225493c5fbad.setContent(html_0aca0b17f2ab849d232969b688972402);
+        
+
+        marker_8e01b46f76b27bd4e0185646db4b5a29.bindPopup(popup_f27d22394b10ac0a243b225493c5fbad)
+        ;
+
+        
+    
+    
+            var marker_15490724914be47fd3e7631fa1db448e = L.marker(
+                [40.454, -4.469],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_6dd0ef0e9127678f2527dc6303cfd71a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_15490724914be47fd3e7631fa1db448e.setIcon(icon_6dd0ef0e9127678f2527dc6303cfd71a);
+        
+    
+        var popup_3af3e9f286e85a8f5620a26a29c47a27 = L.popup({"maxWidth": 300});
+
+        
+            var html_e1afaa01335132d56188e50acf00aeb7 = $(`<div id="html_e1afaa01335132d56188e50acf00aeb7" style="width: 100.0%; height: 100.0%;"><b>Cebreros</b><br>Tipo: Pueblo<br>Distancia desde la casa: 17.02 km</div>`)[0];
+            popup_3af3e9f286e85a8f5620a26a29c47a27.setContent(html_e1afaa01335132d56188e50acf00aeb7);
+        
+
+        marker_15490724914be47fd3e7631fa1db448e.bindPopup(popup_3af3e9f286e85a8f5620a26a29c47a27)
+        ;
+
+        
+    
+    
+            var marker_e35377549c967289b96596a1f19a5017 = L.marker(
+                [40.394, -4.708],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_69fea1ff901a3673d5428b728ef38b71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_e35377549c967289b96596a1f19a5017.setIcon(icon_69fea1ff901a3673d5428b728ef38b71);
+        
+    
+        var popup_f66cb170481b99bc39bd5eefd3736244 = L.popup({"maxWidth": 300});
+
+        
+            var html_24b2859819fe273c8a5a1141cfdd3ed7 = $(`<div id="html_24b2859819fe273c8a5a1141cfdd3ed7" style="width: 100.0%; height: 100.0%;"><b>Navaluenga</b><br>Tipo: Pueblo<br>Distancia desde la casa: 32.4 km</div>`)[0];
+            popup_f66cb170481b99bc39bd5eefd3736244.setContent(html_24b2859819fe273c8a5a1141cfdd3ed7);
+        
+
+        marker_e35377549c967289b96596a1f19a5017.bindPopup(popup_f66cb170481b99bc39bd5eefd3736244)
+        ;
+
+        
+    
+    
+            var marker_f12a190b7ede37b86b1fb14212f3c339 = L.marker(
+                [40.511, -4.463],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_f84cd4193f1a71040167c0397cb9cd45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_f12a190b7ede37b86b1fb14212f3c339.setIcon(icon_f84cd4193f1a71040167c0397cb9cd45);
+        
+    
+        var popup_a18db0f0e38648a773257c9189f0244c = L.popup({"maxWidth": 300});
+
+        
+            var html_564ab76d9292f9a21f2dd31f67350225 = $(`<div id="html_564ab76d9292f9a21f2dd31f67350225" style="width: 100.0%; height: 100.0%;"><b>El Hoyo de Pinares</b><br>Tipo: Pueblo<br>Distancia desde la casa: 10.67 km</div>`)[0];
+            popup_a18db0f0e38648a773257c9189f0244c.setContent(html_564ab76d9292f9a21f2dd31f67350225);
+        
+
+        marker_f12a190b7ede37b86b1fb14212f3c339.bindPopup(popup_a18db0f0e38648a773257c9189f0244c)
+        ;
+
+        
+    
+    
+            var marker_08517063c2dcf20d5b948b722a086e97 = L.marker(
+                [40.594, -4.335],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_b6b10f0c975be93b4b1474fb09554cdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_08517063c2dcf20d5b948b722a086e97.setIcon(icon_b6b10f0c975be93b4b1474fb09554cdf);
+        
+    
+        var popup_34c2756ad0f3966e6ce80e5cfaf81aad = L.popup({"maxWidth": 300});
+
+        
+            var html_e46258c2ffe3c61c2a57ab37858f5f9a = $(`<div id="html_e46258c2ffe3c61c2a57ab37858f5f9a" style="width: 100.0%; height: 100.0%;"><b>Castillo de Magalia</b><br>Tipo: Interés<br>Distancia desde la casa: 9.47 km</div>`)[0];
+            popup_34c2756ad0f3966e6ce80e5cfaf81aad.setContent(html_e46258c2ffe3c61c2a57ab37858f5f9a);
+        
+
+        marker_08517063c2dcf20d5b948b722a086e97.bindPopup(popup_34c2756ad0f3966e6ce80e5cfaf81aad)
+        ;
+
+        
+    
+    
+            var marker_b15715b9746124287bd042b0a1610d14 = L.marker(
+                [40.589, -4.324],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_ebc664b5ca68e41880a6c319273d71ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b15715b9746124287bd042b0a1610d14.setIcon(icon_ebc664b5ca68e41880a6c319273d71ac);
+        
+    
+        var popup_19c36052d8266ccdef250daa53f9a999 = L.popup({"maxWidth": 300});
+
+        
+            var html_55048323b03c830b5c97832917f27d30 = $(`<div id="html_55048323b03c830b5c97832917f27d30" style="width: 100.0%; height: 100.0%;"><b>Atalaya de Eiffel</b><br>Tipo: Interés<br>Distancia desde la casa: 10.48 km</div>`)[0];
+            popup_19c36052d8266ccdef250daa53f9a999.setContent(html_55048323b03c830b5c97832917f27d30);
+        
+
+        marker_b15715b9746124287bd042b0a1610d14.bindPopup(popup_19c36052d8266ccdef250daa53f9a999)
+        ;
+
+        
+    
+    
+            var marker_db40d951d74077b4a77d777430a67699 = L.marker(
+                [40.656, -4.7],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_b860196f40627f4fd044bd8143cd06bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_db40d951d74077b4a77d777430a67699.setIcon(icon_b860196f40627f4fd044bd8143cd06bb);
+        
+    
+        var popup_6885a334efa53e2f4cd66b0bbe033488 = L.popup({"maxWidth": 300});
+
+        
+            var html_21d9e420b064f61992bb2c5744de8078 = $(`<div id="html_21d9e420b064f61992bb2c5744de8078" style="width: 100.0%; height: 100.0%;"><b>Muralla de Ávila</b><br>Tipo: Interés<br>Distancia desde la casa: 22.21 km</div>`)[0];
+            popup_6885a334efa53e2f4cd66b0bbe033488.setContent(html_21d9e420b064f61992bb2c5744de8078);
+        
+
+        marker_db40d951d74077b4a77d777430a67699.bindPopup(popup_6885a334efa53e2f4cd66b0bbe033488)
+        ;
+
+        
+    
+    
+            var marker_78777758d675615299973b6045a7bf00 = L.marker(
+                [40.591, -4.147],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_e2960b1fe6f2ad3ad7cb9f47e8603ebb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_78777758d675615299973b6045a7bf00.setIcon(icon_e2960b1fe6f2ad3ad7cb9f47e8603ebb);
+        
+    
+        var popup_70df7a832755f51c3759c07edd040f93 = L.popup({"maxWidth": 300});
+
+        
+            var html_b9228fab6700ff0aa5660129a574d355 = $(`<div id="html_b9228fab6700ff0aa5660129a574d355" style="width: 100.0%; height: 100.0%;"><b>Monasterio de El Escorial</b><br>Tipo: Interés<br>Distancia desde la casa: 25.34 km</div>`)[0];
+            popup_70df7a832755f51c3759c07edd040f93.setContent(html_b9228fab6700ff0aa5660129a574d355);
+        
+
+        marker_78777758d675615299973b6045a7bf00.bindPopup(popup_70df7a832755f51c3759c07edd040f93)
+        ;
+
+        
+    
+    
+            var marker_7dfbf89a18fd6f2af40ad3cb7b717a56 = L.marker(
+                [40.607, -4.443],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_55491bc1c4d81ea044efd96144b99956 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7dfbf89a18fd6f2af40ad3cb7b717a56.setIcon(icon_55491bc1c4d81ea044efd96144b99956);
+        
+    
+        var popup_10ee39a42700c4c1d1e489353b8bffc7 = L.popup({"maxWidth": 300});
+
+        
+            var html_83e6e39fc55d959d94325368b530d782 = $(`<div id="html_83e6e39fc55d959d94325368b530d782" style="width: 100.0%; height: 100.0%;"><b>Ruta Circular Navalperal</b><br>Tipo: Senderismo<br>Longitud: 6.2 km<br>Distancia desde la casa: 0.25 km</div>`)[0];
+            popup_10ee39a42700c4c1d1e489353b8bffc7.setContent(html_83e6e39fc55d959d94325368b530d782);
+        
+
+        marker_7dfbf89a18fd6f2af40ad3cb7b717a56.bindPopup(popup_10ee39a42700c4c1d1e489353b8bffc7)
+        ;
+
+        
+    
+    
+            var marker_1f8797f42eea817fd466971047f781eb = L.marker(
+                [40.609, -4.447],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_5ab63b33b99e6cebcef05d336824beef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1f8797f42eea817fd466971047f781eb.setIcon(icon_5ab63b33b99e6cebcef05d336824beef);
+        
+    
+        var popup_b565c9d46915ded2d06fab77272bdc10 = L.popup({"maxWidth": 300});
+
+        
+            var html_39a797f417b3b5422386b49bedd256b1 = $(`<div id="html_39a797f417b3b5422386b49bedd256b1" style="width: 100.0%; height: 100.0%;"><b>Ruta Pinar y Pradera</b><br>Tipo: Senderismo<br>Longitud: 4.8 km<br>Distancia desde la casa: 0.33 km</div>`)[0];
+            popup_b565c9d46915ded2d06fab77272bdc10.setContent(html_39a797f417b3b5422386b49bedd256b1);
+        
+
+        marker_1f8797f42eea817fd466971047f781eb.bindPopup(popup_b565c9d46915ded2d06fab77272bdc10)
+        ;
+
+        
+    
+    
+            var marker_d516f3bcf919f0d952a074efd4157661 = L.marker(
+                [40.608, -4.451],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_24550c1ae7e295dfe01e061c17f53eab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d516f3bcf919f0d952a074efd4157661.setIcon(icon_24550c1ae7e295dfe01e061c17f53eab);
+        
+    
+        var popup_f9a72682dd8ee316b155e20f2e517b3b = L.popup({"maxWidth": 300});
+
+        
+            var html_38a772eec04a0947cb73445d6801d367 = $(`<div id="html_38a772eec04a0947cb73445d6801d367" style="width: 100.0%; height: 100.0%;"><b>Ruta Embalse Circular</b><br>Tipo: Senderismo<br>Longitud: 5.5 km<br>Distancia desde la casa: 0.49 km</div>`)[0];
+            popup_f9a72682dd8ee316b155e20f2e517b3b.setContent(html_38a772eec04a0947cb73445d6801d367);
+        
+
+        marker_d516f3bcf919f0d952a074efd4157661.bindPopup(popup_f9a72682dd8ee316b155e20f2e517b3b)
+        ;
+
+        
+    
+    
+            var marker_38a200b492494b64358f3291d87d9746 = L.marker(
+                [40.604, -4.45],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_401954074666fc8eaa10aeaf77a454cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_38a200b492494b64358f3291d87d9746.setIcon(icon_401954074666fc8eaa10aeaf77a454cc);
+        
+    
+        var popup_32ce9225b17516021a1f3df1cfc6a5f2 = L.popup({"maxWidth": 300});
+
+        
+            var html_e946ec046f744f24b9188968d56fc557 = $(`<div id="html_e946ec046f744f24b9188968d56fc557" style="width: 100.0%; height: 100.0%;"><b>Ruta MTB Local</b><br>Tipo: Ciclismo<br>Longitud: 8.7 km<br>Distancia desde la casa: 0.44 km</div>`)[0];
+            popup_32ce9225b17516021a1f3df1cfc6a5f2.setContent(html_e946ec046f744f24b9188968d56fc557);
+        
+
+        marker_38a200b492494b64358f3291d87d9746.bindPopup(popup_32ce9225b17516021a1f3df1cfc6a5f2)
+        ;
+
+        
+    
+    
+            var marker_8d349a558a05ef7a7f68d57554c76f6d = L.marker(
+                [40.605, -4.438],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_7486d3dc9317b7fd489e2b4cc1304216 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8d349a558a05ef7a7f68d57554c76f6d.setIcon(icon_7486d3dc9317b7fd489e2b4cc1304216);
+        
+    
+        var popup_60d3d09538e1205cbc1eed4f7874f926 = L.popup({"maxWidth": 300});
+
+        
+            var html_340dbf9fc1b28e666d6172c6687f3a9b = $(`<div id="html_340dbf9fc1b28e666d6172c6687f3a9b" style="width: 100.0%; height: 100.0%;"><b>Ruta Cortafuegos MTB</b><br>Tipo: Ciclismo<br>Longitud: 10.2 km<br>Distancia desde la casa: 0.67 km</div>`)[0];
+            popup_60d3d09538e1205cbc1eed4f7874f926.setContent(html_340dbf9fc1b28e666d6172c6687f3a9b);
+        
+
+        marker_8d349a558a05ef7a7f68d57554c76f6d.bindPopup(popup_60d3d09538e1205cbc1eed4f7874f926)
+        ;
+
+        
+    
+    
+            var marker_f6ac8e19a6c7ca3d157f96aae5a84be1 = L.marker(
+                [40.607, -4.442],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_520ceadb9bcdfbafb02bfce48c0d5c74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f6ac8e19a6c7ca3d157f96aae5a84be1.setIcon(icon_520ceadb9bcdfbafb02bfce48c0d5c74);
+        
+    
+        var popup_5fa68a20985d9b4efc78a10c3edba1d7 = L.popup({"maxWidth": 300});
+
+        
+            var html_89ef2dce9c187be36feee9a76ef3421f = $(`<div id="html_89ef2dce9c187be36feee9a76ef3421f" style="width: 100.0%; height: 100.0%;"><b>Cancha de Pádel Municipal</b><br>Tipo: Interés<br>Distancia desde la casa: 0.33 km</div>`)[0];
+            popup_5fa68a20985d9b4efc78a10c3edba1d7.setContent(html_89ef2dce9c187be36feee9a76ef3421f);
+        
+
+        marker_f6ac8e19a6c7ca3d157f96aae5a84be1.bindPopup(popup_5fa68a20985d9b4efc78a10c3edba1d7)
+        ;
+
+        
+    
+    
+            var marker_65151c3d3e266d4593082e9657e19b15 = L.marker(
+                [40.6085, -4.4405],
+                {}
+            ).addTo(map_f46307cbdb52fe28b1d29ba09e9e8219);
+        
+    
+            var icon_d9bd446b740527d539d7bb26b1e0dccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_65151c3d3e266d4593082e9657e19b15.setIcon(icon_d9bd446b740527d539d7bb26b1e0dccc);
+        
+    
+        var popup_43a572e92609372f7f027f6eeb435de1 = L.popup({"maxWidth": 300});
+
+        
+            var html_c47553c0abd91b7a37172cdfa05ad736 = $(`<div id="html_c47553c0abd91b7a37172cdfa05ad736" style="width: 100.0%; height: 100.0%;"><b>Piscina Municipal</b><br>Tipo: Interés<br>Distancia desde la casa: 0.51 km</div>`)[0];
+            popup_43a572e92609372f7f027f6eeb435de1.setContent(html_c47553c0abd91b7a37172cdfa05ad736);
+        
+
+        marker_65151c3d3e266d4593082e9657e19b15.bindPopup(popup_43a572e92609372f7f027f6eeb435de1)
+        ;
+
+        
+    
+</script>
+</html>
